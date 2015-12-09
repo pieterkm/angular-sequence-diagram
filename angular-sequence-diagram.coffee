@@ -3,8 +3,6 @@ require?("angular")
 require?("js-sequence-diagrams")
 
 angular = global?.angular || window?.angular
-Diagram = global?.Diagram || window?.Diagram
-
 
 seq = angular.module "atSequenceDiagram", []
 
@@ -25,6 +23,7 @@ render = (sequence_code, option = {})->
 	$rendering_area = angular.element rendering_area
 	$rendering_area.html ""
 
+	Diagram = global?.Diagram || window?.Diagram
 	diagram = Diagram.parse sequence_code
 	diagram.drawSVG rendering_area, option
 	$rendering_area.html()

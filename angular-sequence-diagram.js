@@ -1,5 +1,5 @@
 (function() {
-  var Diagram, angular, baseoption, directive_link, draw, language_directive_link, render, seq;
+  var angular, baseoption, directive_link, draw, language_directive_link, render, seq;
 
   if (typeof require === "function") {
     require("angular");
@@ -11,8 +11,6 @@
 
   angular = (typeof global !== "undefined" && global !== null ? global.angular : void 0) || (typeof window !== "undefined" && window !== null ? window.angular : void 0);
 
-  Diagram = (typeof global !== "undefined" && global !== null ? global.Diagram : void 0) || (typeof window !== "undefined" && window !== null ? window.Diagram : void 0);
-
   seq = angular.module("atSequenceDiagram", []);
 
   baseoption = {
@@ -20,7 +18,7 @@
   };
 
   render = function(sequence_code, option) {
-    var $rendering_area, body, diagram, rendering_area;
+    var $rendering_area, Diagram, body, diagram, rendering_area;
     if (option == null) {
       option = {};
     }
@@ -33,6 +31,7 @@
     }
     $rendering_area = angular.element(rendering_area);
     $rendering_area.html("");
+    Diagram = (typeof global !== "undefined" && global !== null ? global.Diagram : void 0) || (typeof window !== "undefined" && window !== null ? window.Diagram : void 0);
     diagram = Diagram.parse(sequence_code);
     diagram.drawSVG(rendering_area, option);
     return $rendering_area.html();

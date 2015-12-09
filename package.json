@@ -1,5 +1,5 @@
 {
-  "name": "angular-sequence-diagram",
+  "name": "angular-sequence-diagram-skyfix",
   "description": "angular-sequence-diagram ================",
   "main": "angular-sequence-diagram.min.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atomita/angular-sequence-diagram.git"
+    "url": "https://github.com/pieterkm/angular-sequence-diagram.git"
   },
   "author": "atomita",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atomita/angular-sequence-diagram/issues"
+    "url": "https://github.com/pieterkm/angular-sequence-diagram/issues"
   },
-  "homepage": "https://github.com/atomita/angular-sequence-diagram",
+  "homepage": "https://github.com/pieterkm/angular-sequence-diagram",
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "gulp": "^3.8.10",
