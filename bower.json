@@ -1,12 +1,12 @@
 {
-  "name": "angular-sequence‎-diagram",
-  "version": "0.0.5.2",
+  "name": "angular-sequence‎-diagram-skyfix",
+  "version": "0.0.5.3",
   "authors": [
     "@ <sleeping.cait.sith+gh@gmail.com>"
   ],
   "main": "angular-sequence-diagram.min.js",
   "license": "MIT",
-  "homepage": "https://atomita.github.io/",
+  "homepage": "https://github.com/pieterkm/angular-sequence-diagram.git",
   "ignore": [
     "**/.*",
     "node_modules",
